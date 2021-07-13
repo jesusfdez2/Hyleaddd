@@ -1,0 +1,571 @@
+<!-- MADE BY jesusf_dez -->
+<!-- DISCORD: jesusf_dez#0001 -->
+
+<!DOCTYPE html>
+<html lang="es">
+<?php
+include 'config/config.php';
+include('config/announcements.php');
+include('script/AI.php');
+include('config/navigation.php');
+?>
+  <head>
+    <title>Hylead Network | Minecraft Server</title>
+	<meta property="og:description" content= "Somos un servidor de Minecraft con una extensa comunidad de jugadores, dedicados a ofrecer la mejor experiencia con nuestros modos de juego, innovando siempre con nuevas características. Únete a Hylead y adentrate en un entorno diferente y renovado, esperamos siempre que la pases bien dentro de el servidor, y tu estadía aquí sea la mejor. Nuestra IP es play.hylead.net y somos un servidor NO PREMIUM, por lo que podrás acceder sin necesidad de comprar el juego. ¡Esperamos te diviertas!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://minelatino.com/wp-content/uploads/2020/07/MineLatino-Network-Servidores-de-Minecraft-no-premium-para-latinos-1.jpg">
+	<meta property="og:image:width" content="1890">
+	<meta property="og:image:height" content="983">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"  rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="script/index.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="assets/style.min.css">
+    <link rel="stylesheet" href="assets/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/idangerous.swiper.css">
+    <link rel="stylesheet" href="assets/w3.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/imagenes/logos/favicon.png" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+
+<body style="background-color:#2C2F33; width: 100%;">
+
+
+<!-- Here is where you should start editing -->
+
+
+    <!-- HEADER (MENU + LOGO + IP BAR) -->
+    <header class="tt-header" style="z-index:1200;">
+        <div class="container">
+            <div class="top-inner clearfix">
+                <div class="top-inner-container">
+
+                <!-- LOGO -->
+
+                    <a class="logo" href="index.html"><img src="assets/imagenes/logos/favicon.png" height="38" width="51" alt=""></a>
+                    <button class="cmn-toggle-switch" id="open-nav" ><span></span></button>
+                    
+                </div>
+            </div>
+            
+            <!-- MENU BAR -->
+            <div class="toggle-block">
+                <div class="toggle-block-container">
+                    <nav class="main-nav clearfix">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Inicio</a>
+                            </li>
+
+                            <li><a href="https://hylead.es/foro">Foro</a></li>
+                            <li><a href="https://hylead.buycraft.net">Tienda</a></li>
+                            <li><a href="https://discord.gg/bfCXUpS3sk">Discord</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Your Server IP Here (Or anything else)-->
+
+                    <div class="nav-more">
+                        <a class="c-btn type-2" style="border-color:#83991A; color:#fff" href="#"; id="copiazaIP"><span>play.hylead.net</span><button class="IsCopied btn234 w3-button w3-green">Copiar IP</button></a> <!-- Place your server IP in script below -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="tt-header-margin" ></div>
+
+    <div id="content-wrapper"style="z-index:1500;" >  
+    <div class="" id="shadow-open" style="z-index:1500;">
+      <div class="mobile-navigation" id="mobile-nav" style="z-index:1500;">
+        <button type="button" name="button" id="close-nav"><i class="fas fa-arrow-left"></i></button>
+        <div class="header-mobile-navigation" >
+          <img src="assets/imagenes/logos/server-logo.png" class="logo-counter" style="width: 200px;">
+        </div>
+        <div class="body-mobile-navigation "">
+          <div class="navigatie-mobil" ">
+            <p>Navegación</p>
+          </div>
+          <ul>
+            <?php redirectionari_navigatie(); ?>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="loadingcontainer hidden"><div class="roata"></div></div></div>
+    <div class="catalin-header">
+        <nav class="catalin-navigatie">
+            <div class="container">
+            <ul class="catalin-nav-social" id="catalin-navi-social">
+              <?php redirectionari_media(); ?>
+            </ul>
+            <ul class="catalin-nav-links">
+              
+              <div id="testare-hide"><?php redirectionari_navigatie(); ?></div>
+            </ul>
+          </nav>
+          <div class="catalin-header-content">
+            <div class="container">
+            <div class="coloana-3" id="coloana-3">
+              <div class="cutie-1" id="cutie-1">
+                <ul>
+                    <section class="Principal-Discord">
+                  <a href="https://discord.gg/bfCXUpS3sk" target="_blank" style="text-decoration: none;">
+                  <ul class="directia-elementelor-secundare">
+                    <li style="font-weight: 300; font-size: 0.8em"; class="element-secundar"><h3>Servidor de Discord</h3></li>
+                    <li style="font-weight: 300; font-size: 0.8em"; class="element-secundar"><p><span id="discord-count">?</span> conectados ahora</p></li>
+                  </ul>
+                  <ul class="directie-elemente">
+                    <li class="principalul-element"><i class="fab fa-discord discord-spatiu"></i></li>
+                  </ul>
+                  </a>
+                  </ul>
+              </div></section>
+                <div class="cutie-2" id="cutie-2">
+                  <img src="assets/imagenes/logos/server-logo.png" height="?php echo $server_logo_height; ?>" width="?php echo $server_logo_width; ?>" class="logo-counter">
+                </div>
+              <div class="cutie-3" id="cutie-3">
+                <a style="text-decoration: none;" id="copiazaIP2">
+                    <ul class="directie-elemente">
+                        <li class="principalul-element"><i class="fas fa-play-circle server-spatiu"></i></li>
+                      </ul>
+                  <ul class="directia-elementelor-secundare" style="margin-right: 0px;">
+                    <li style="font-weight: 300; font-size: 0.8em"; class="element-secundar"><h3 class="play-button-design"><span class="player-count"><div class="invarte"></div></span> jugadores en línea</h3></li>
+                    <li style="font-weight: 300; font-size: 0.8em"; class="element-secundar"><p class="play-button-design-gray">¡Entra ahora!</p></li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+        <div class="background-block" style="background-image:url(assets/imagenes/backgrounds/bg2.png);">
+
+  <div class="container">
+    <div id="about" class="section sectwo animated fadeInUp">
+        <div class="tt-devider"></div>
+
+        <div class="empty-space marg-lg-b35 marg-sm-b20 marg-xs-b10"></div>        
+
+        <center>
+            <h2 style="color:#FAFAF7;font-size: 2.7em; font-weight: 300">¿Qué es Hylead?</h2>
+        </center>
+        <div class="empty-space marg-lg-b95 marg-sm-b50 marg-xs-b30"></div>        
+        <br><br>
+        <center>
+            <div style="width: 95%" class="row">
+			
+                <div class="col-sm">
+				
+				                            <div class="simple-text size-3">
+
+                    <p style="font-weight: 500; font-size: 1.4em">Somos un servidor de Minecraft con una extensa comunidad de jugadores, dedicados a ofrecer la mejor experiencia con nuestros modos de juego, innovando siempre con nuevas características. Únete a Hylead y adentrate en un entorno diferente y renovado, esperamos siempre que la pases bien dentro de el servidor, y tu estadía aquí sea la mejor. Somos NO PREMIUM y puedes ingresar mediante las versiones 1.8.x a 1.15.x</p>
+                </div>
+                </div>
+                <div class="col-sm">
+                    <img style="width: 100%; border-radius: 25px;" class="z-depth-2" src="assets/imagenes/backgrounds/back1.png" alt="">
+                </div>
+            </div>
+        </center>
+        <br><br><br><br>
+        <div class="tt-devider"></div>
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+        <div class="empty-space marg-lg-b95 marg-sm-b50 marg-xs-b30"></div>        
+        <center>
+		
+            <h2 style="color:#FAFAF7;font-size: 2.7em; font-weight: 300">¿Por qué elegir a Hylead?</h2>
+        </center>
+        <div class="empty-space marg-lg-b25 marg-sm-b20 marg-xs-b10"></div>        
+        <center>
+		<p style="color:#FAFAF7;font-weight: 300; font-size: 1.3em">¡Sorprendete con nuestras características!</p>
+        </center>
+        <div class="empty-space marg-lg-b25 marg-sm-b20 marg-xs-b10"></div>        
+
+            <div class="row">
+            
+                <div class="card">
+                    <div class="tt-service type-4 clearfix">
+                        <a class="tt-service-icon">
+                            <img src="assets/imagenes/iconos/technology.png" height="100" width="100" alt="">
+                        </a>
+                        <div class="tt-service-info">
+                            <a class="tt-service-title c-h4">DIVERSIÓN</a>
+                            <div class="simple-text size-3">
+                                <p>Modalidades con increíbles características tales como, misiones, encantamientos especiales, cofres del tesoro, cosméticos, minijuegos y mucho más por descubrir, además de poder jugar con tus amigos y pasarla bien aventurándose en todo el servidor.		</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="empty-space marg-sm-b30"></div>
+                </div>
+                <div class="card">
+                    <div class="tt-service type-4 clearfix">
+                        <a class="tt-service-icon">
+                            <img src="assets/imagenes/iconos/party.png" height="100" width="100" alt="">
+                        </a>
+                        <div class="tt-service-info">
+                            <a class="tt-service-title c-h4">EVENTOS</a>
+                            <div class="simple-text size-3">
+                                <p>Solemos hacer eventos y sorteos eventualmente en celebración a algún logro u ocasión especial, algunas de las cosas que puedes conseguir pueden ser, dinero, objetos e incluso rangos exclusivos.		</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="empty-space marg-sm-b30"></div>                   
+                </div>
+                <div class="card">
+                    <div class="tt-service type-4 clearfix">
+                        <a class="tt-service-icon">
+                            <img src="assets/imagenes/iconos/buss.png" height="100" width="100" alt="">
+                        </a>
+                        <div class="tt-service-info">
+                            <a class="tt-service-title c-h4">SOPORTE AMIGABLE</a>
+                            <div class="simple-text size-3">
+                                <p>Soporte activo y eficaz junto con un equipo administrativo sociable, divertido y comprometido a ayudar.</p>
+                            </div>
+                        </div>
+                    </div>              
+                </div>                               
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="empty-space marg-lg-b95 marg-sm-b50 marg-xs-b30"></div>        
+            <div class="row">
+            
+                <div class="card">
+                    <div class="tt-service type-4 clearfix">
+                        <a class="tt-service-icon">
+                            <img src="assets/imagenes/iconos/suggestion.png" height="100" width="100" alt="">
+                        </a>
+                        <div class="tt-service-info">
+                            <a class="tt-service-title c-h4">IDEAS Y SUGERENCIAS</a>
+                            <div class="simple-text size-3">
+                                <p>Tomamos en cuenta todas las ideas o sugerencias dadas por nuestra comunidad para la mejora y eficacia del servidor, tales como modalidades, nuevas características y demás.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="empty-space marg-sm-b30"></div>
+                </div>
+                <div class="card">
+                    <div class="tt-service type-4 clearfix">
+                        <a class="tt-service-icon">
+                            <img src="assets/imagenes/iconos/multimedia.png" height="100" width="100" alt="">
+                        </a>
+                        <div class="tt-service-info">
+                            <a class="tt-service-title c-h4">CONECTIVIDAD</a>
+                            <div class="simple-text size-3">
+                                <p>Contamos con los mejores equipos para garantizar una excelente fluidez, todo el servidor cuenta con máquinas de alta tecnología que no permiten el lag y garantizan una buena conexión para la mejor experiencia.</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="empty-space marg-sm-b30"></div>                   
+                </div>
+                <div class="card">
+                    <div class="tt-service type-4 clearfix">
+                        <a class="tt-service-icon">
+                            <img src="assets/imagenes/iconos/money.png" height="100" width="100" alt="">
+                        </a>
+                        <div class="tt-service-info">
+                            <a class="tt-service-title c-h4">SEGURIDAD Y FUNCIONAMIENTO</a>
+                            <div class="simple-text size-3">
+                                <p>Aseguramos seguridad y protección de datos del servidor y miembros, poseemos sistemas simplificados fáciles de usar, junto con menús de información, utilidad y diversión.		</p>
+                            </div>
+                        </div>
+                    </div>              
+                </div>                               
+            </div>
+
+        <div class="empty-space marg-lg-b95 marg-sm-b50 marg-xs-b30"></div>    
+        <div class="tt-devider"></div>
+		
+        <div class="background-block" style="background-image:url(assets/imagenes/backgrounds/bg.jpg);">
+            <div class="container" >
+                <div class="empty-space marg-lg-b120 marg-sm-b50 marg-xs-b30"></div>
+
+                <div class="tt-banner-img" style="z-index:900">
+                    <img style="width: 35%; border-radius: 25px;"class="img-responsive" src="assets/imagenes/backgrounds/banner.png" alt="" height="30px">
+                   <br>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-7 col-sm-offset-5">
+					<center>
+
+                     <h4 class="tt-banner-title c-h2"><small style="z-index:900">¡MÁS INFORMACIÓN EN EL FORO!</small></h4>
+
+                      <br>
+                        <a class="c-btn type-1 size-3 " href="https://hylead.es/foro" style="z-index:900">VISITA NUESTRO FORO</a>
+</center>
+
+
+
+
+                    </div>
+                </div>
+                <div class="empty-space marg-lg-b120 marg-sm-b50 marg-xs-b30"></div>
+        <div class="tt-devider"></div>
+
+            </div>
+        </div>
+    </div>
+  <div class="container">
+    <div id="about" class="section sectwo animated fadeInUp">
+        <div class="tt-devider"></div>
+
+        <div class="empty-space marg-lg-b35 marg-sm-b20 marg-xs-b10"></div>        
+
+        <center>
+            <h2 style="color:#FAFAF7;font-size: 2.7em; font-weight: 300">¡Mira uno de nuestros últimos videos!</h2>
+        </center>
+        <div class="empty-space marg-lg-b95 marg-sm-b50 marg-xs-b30"></div>        
+        <br><br>
+        <center>
+            <div style="width: 95%" class="row">
+			                <div class="col-sm">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/mEPatYBX_vc" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+
+                <div class="col-sm">
+				
+				                            <div class="simple-text size-3">
+
+                    <p style="font-weight: 500; font-size: 1.4em">¿Deseas promocionar el servidor y obtener beneficios a cambio de ello? Si tienes cierta cantidad de subscriptores o seguidores puedes ingresar al equipo de creadores de contenido de Hylead Network y disfrutar de los beneficios que poseen, si deseas obtener más información, presiona el botón aquí debajo y obtendrás una lista de requisitos.</p>
+               
+                        <a class="c-btn type-1 size-3 " href="https://hylead.es/foro" style="z-index:999">VISITA NUESTRO FORO</a>
+			   </div>
+                </div>
+            </div>
+        </center>
+        <br><br><br><br>
+        <div class="tt-devider"></div>
+
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+			        <div class="background-block" style="background-image:url(assets/imagenes/backgrounds/bg3.png);">
+  <div class="container">
+            <!-- TT-TITLE -->
+            <div class="tt-title">
+					            <div class="empty-space marg-lg-b20 marg-sm-b10"></div>
+
+                <div class="tt-title-cat">¿Buscas más beneficios?</div>
+                <h2 class="c-h2"><small>¡COMPRA RANGO EN NUESTRA TIENDA!</small></h2>
+            </div>
+					            <div class="empty-space marg-lg-b20 marg-sm-b10"></div>
+
+            <!-- DONATION PRICING TABLE -->
+            <div class="row">
+
+                <div class="col-sm">
+				                            <div class="simple-text size-3">
+
+                    <center><p style="font-weight: 300; font-size: 1.3em">¿Deseas obtener beneficios, rangos, dinero, objetos especiales y mucho más? Puedes visitar nuestra tienda y ver entre una gran lista de opciones de compra y escoger la que más te guste, comprando beneficios puedes obtener características como volar, cosméticos, objetos especiales y demás, también puedes optar por contribuir monetariamente al servidor donando y así ayudar en su crecimiento diario.
+</p>
+                    <img style="width: 40%; border-radius: 25px;" class="z-depth-2" src="assets/imagenes/backgrounds/shopdrown.png" alt="">
+</center>
+					            <div class="empty-space marg-lg-1 marg-sm-b10"></div>
+
+            </div>
+            </div>
+            </div>
+            </div>
+            <div class="text-center">
+
+                        <!-- Put your Buycraft or whichever server shop link in href="#"-->
+
+                <a class="c-btn type-1 size-2" href="https://hylead.buycraft.net">¡VÍSITA LA TIENDA!</a>
+						            <div class="empty-space marg-lg-b40 marg-sm-b30"></div>
+		            <div class="empty-space marg-lg-b40 marg-sm-b30"></div>
+
+            </div>
+        </div>
+        </div>
+        <div class="tt-devider"></div>
+
+    <footer class="tt-footer" style="background-color:#23272A">
+        <div class="background-block" style="background-color:#23272A;">
+        <div class="container">
+		
+            <div class="row">
+			
+                <div class="col-sm-6 col-md-3">
+                    <center><img src="assets/imagenes/logos/server-logo.png" alt="" style="width: 75%; border-radius: 25px";></center>
+                    <div class="empty-space marg-lg-b25"></div>
+                    <div class="simple-text size-3 color-4">
+                        <center><p>Somos un servidor de Minecraft con extensa comunidad de jugadores, dedicados a 
+                            ofrecer la mejor experiencia con nuestras modalidades y servicios, innovando siempre en
+                             nuestras tecnologías y características, adentrate en un entorno diferente y renovado, 
+                            esperamos siempre que la estadía de los miembros en el servidor, sea la mejor.!</p>
+                  </center>  </div>
+                    <div class="empty-space marg-xs-b30"></div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <h5 class="c-h5 color-3">Contacto</h5>
+                    <div class="empty-space marg-lg-b10"></div>
+
+                    <div class="empty-space marg-lg-b25"></div>
+
+                    <div class="tt-address clearfix">
+                        <!--<div class="tt-address-icon"><i class="fas fa-at" aria-hidden="true"></i></div>-->
+                        <div class="tt-address-info">
+
+                            <style>
+                                address::after{
+                                    content: "hyleadok\40gmail.com";
+                                    font-size: 15px ;
+                                }
+                            </style>
+
+                            <address>
+
+                            </address>
+
+                          <!---- <a href="mailto:yourserver@email.com" style="font-size: 15px">hyleadnetwork@gmail.com</a>-->
+                        </div>
+                    </div>
+                    <div class="empty-space marg-lg-b25"></div>
+                    <h5 class="c-h5 color-3">Nuestras redes</h5>
+                    <div class="empty-space marg-lg-b10"></div>
+
+     <!-- Your Server's Social Network (If you don't have one of the Social Network Just delete the whole line -->
+     <!-- Replace # in tag <a href="#" to your social network links (DONT FORGET HTTP:// or HTTPS://)          -->
+
+                    <ul class="tt-social clearfix">
+                       <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                       <li><a href="https://twitter.com/HyLeadNetwork"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                       <li><a href="https://www.instagram.com/hylead"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                       <li><a href="https://discord.gg/bfCXUpS3sk"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <div class="empty-space marg-sm-b30"></div>
+
+     <!-- Your Server's Social Network (If you don't have one of the Social Network Just delete the whole line -->
+     <!-- Replace # in tag <a href="#" to your social network links (DONT FORGET HTTP:// or HTTPS://)          -->
+
+                    <ul class="tt-social clearfix">
+                    </ul>
+                    <div class="empty-space marg-sm-b30"></div>
+					
+                </div>
+
+                <!-- Contact Form -->
+
+                <div class="col-xs-12 col-md-6">
+                    <h5 class="c-h5 color-3">¡Contactanos!</h5>
+                    <div class="empty-space marg-lg-b10"></div>
+                    <div class="simple-text size-3 color-4">
+                        <p>¿Necesitas contacto directo con la administración de Hylead Network? ¡Envíanos un correo!</p>
+                    </div>
+                    <div class="empty-space marg-lg-b10"></div>
+
+                    <div class="tt-footer-form">
+                        <form action="mailto:hyleadnetwork@gmail.com" method="post" enctype="text/plain"> <!-- Enter Your Email Here -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input class="c-input type-1" type="text" placeholder="Tu nombre">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="c-input type-1" type="text" placeholder="Tu correo">
+                                </div>
+                            </div>
+                            <textarea class="c-area type-1" placeholder="Mensaje"></textarea>
+                            <br><br><br><br>
+                            <button class="w3-button w3-green">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="empty-space marg-lg-b80 marg-sm-b50 marg-xs-b30"></div>
+        </div>
+        <div class="tt-footer-copy">
+            <div class="container">
+<div class="footer">
+
+                <!-- Copyright Footer (Know What You Are Doing!)-->
+
+                    <p>Hylead Network © 2020-2021. Todos los derechos reservados</p>
+					  <input type="text" id="ipServer" value="play.hylead.net"/>
+                </div>
+            </div>
+        </div>
+    </footer>
+<style>
+.hideme
+{
+    display:none;
+    visibility:hidden;
+}
+.showme
+{
+    display:inline;
+    visibility:visible;
+}
+</style>
+  
+</div>
+<button class="mergisus" style="display: inline-block;"><span></span></button>
+  </body>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="script/index.js"></script>
+  <script type="text/javascript">
+
+  function arataJucatori() {
+    $.getJSON('https://api.minetools.eu/ping/96.47.225.204/25712', function(status) {
+        var jucatoriOnline = status.players.online;
+        $(".player-count").html(((jucatoriOnline = jucatoriOnline.toString().split("."))[0] = jucatoriOnline[0].replace(/\B(?=(\d{3})+(?!\d))/g, ","), jucatoriOnline.join(".")));
+    });
+  }
+
+    arataJucatori();
+    test = setInterval(arataJucatori, 1000);
+
+    $.get('https://discord.com/api/guilds/784889101425836062/widget.json', function(d){
+    	let members = d['members'];
+    	let online_count = members.length;
+    	$('#discord-count').html(online_count);
+    });
+
+      $( document ).ready(function() {
+    $('.agata').on('click', function() {
+       $('.modal-wrapper').toggleClass('open');
+      $('.page-wrapper').toggleClass('blur-it');
+       return false;
+    });
+  });
+
+  document.documentElement.style.setProperty('--main-color', '<?php echo $main_color; ?>');
+
+</script>
+</html>
